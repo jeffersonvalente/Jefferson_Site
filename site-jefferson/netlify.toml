@@ -1,0 +1,7 @@
+[build]
+  base = "site-jefferson"
+  publish = "build"
+  command = "npm install --legacy-peer-deps && npm run build"
+
+[context.production.environment]
+  NODE_VERSION = "18.20.5"
