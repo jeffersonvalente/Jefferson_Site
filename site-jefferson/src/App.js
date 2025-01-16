@@ -3,6 +3,7 @@ import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 function App() {
   const particlesInit = async (main) => {
@@ -60,6 +61,32 @@ function App() {
         >
           Saiba Mais
         </a>
+
+        {/* Ícones de Contato */}
+        <div className="flex mt-8 gap-6 z-10">
+          <a
+            href="https://www.linkedin.com/in/jefferson-hoy-valente/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-400 hover:text-blue-500 transition-transform transform hover:scale-110"
+          >
+            <FaLinkedin size={30} />
+          </a>
+          <a
+            href="https://github.com/jeffersonvalente"
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray-300 hover:text-gray-400 transition-transform transform hover:scale-110"
+          >
+            <FaGithub size={30} />
+          </a>
+          <a
+            href="mailto:jeffersonvalente1988@gmail.com"
+            className="text-red-400 hover:text-red-500 transition-transform transform hover:scale-110"
+          >
+            <FaEnvelope size={30} />
+          </a>
+        </div>
       </header>
 
       {/* Sobre Mim */}
@@ -116,7 +143,7 @@ function App() {
                 Planejei e executei a migração de workloads críticos para ambientes Kubernetes, garantindo alta
                 disponibilidade e escalabilidade.
               </p>
-            </motion.div>            
+            </motion.div>
             <motion.div
               className="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow hover:scale-105"
               initial={{ opacity: 0, y: 50 }}
@@ -145,31 +172,34 @@ function App() {
 
       {/* Contato */}
       <footer id="contato" className="py-10 bg-gray-900 text-white text-center">
-        <h3 className="text-2xl font-bold">Vamos nos conectar!</h3>
-        <div className="mt-6 flex justify-center gap-6">
+        <h3 className="text-2xl font-bold mb-4">Vamos nos conectar!</h3>
+        <div className="flex justify-center gap-6 mb-6">
           <a
             href="https://www.linkedin.com/in/jefferson-hoy-valente/"
             target="_blank"
             rel="noreferrer"
-            className="text-blue-400 hover:text-blue-500 hover:scale-110 transition-transform"
+            className="text-blue-400 hover:text-blue-500 transition-transform transform hover:scale-110"
           >
-            LinkedIn
+            <FaLinkedin size={40} />
           </a>
           <a
             href="https://github.com/jeffersonvalente"
             target="_blank"
             rel="noreferrer"
-            className="text-blue-400 hover:text-blue-500 hover:scale-110 transition-transform"
+            className="text-gray-300 hover:text-gray-400 transition-transform transform hover:scale-110"
           >
-            GitHub
+            <FaGithub size={40} />
           </a>
           <a
             href="mailto:jeffersonvalente1988@gmail.com"
-            className="text-blue-400 hover:text-blue-500 hover:scale-110 transition-transform"
+            className="text-red-400 hover:text-red-500 transition-transform transform hover:scale-110"
           >
-            E-mail
+            <FaEnvelope size={40} />
           </a>
         </div>
+        <p className="text-gray-400 text-sm">
+          &copy; {new Date().getFullYear()} Jefferson Hoy Valente. Todos os direitos reservados.
+        </p>
       </footer>
     </div>
   );
