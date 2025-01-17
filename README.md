@@ -1,5 +1,5 @@
 
-# Jefferson_Site
+# Site pessoal
 
 Bem-vindo ao repositório do meu portfólio pessoal! 🚀  
 Este projeto foi desenvolvido para apresentar minha trajetória, habilidades, projetos e permitir que tech recruiters e líderes conheçam meu trabalho de forma visual e interativa.
